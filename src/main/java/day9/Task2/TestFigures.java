@@ -17,19 +17,20 @@ public class TestFigures {
         System.out.println(calculateRedPerimeter(figures));
     }
 
-        public static double calculateRedPerimeter(Figure[] figures){
+
+    public static double calculateRedPerimeter(Figure[] figures) {
         double sum = 0;
-            for (Figure figure: figures) {
-                if (figure.getColor().equals("Red")){
-                    sum += figure.perimeter();
-                }
+        for (Figure figure : figures) {
+            if ("Red".equals(figure.getColor())) {
+                sum += figure.perimeter();
             }
-            return sum;
+        }
+        return sum;
     }
         public static double calculateRedArea (Figure[] figures){
             double sum = 0;
             for (Figure figure: figures) {
-                if (figure.getColor().equals("Red")){
+                if ("Red".equals(figure.getColor())){
                     sum += figure.area();
                 }
             }

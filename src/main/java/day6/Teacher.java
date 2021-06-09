@@ -22,8 +22,7 @@ public class Teacher {
             break;
             case 4: evaluation = "B";
             break;
-            case 5 : evaluation = "A";
-            break;
+            default: evaluation = "A";
         }
         System.out.println("Teacher " + this.name + " is evaluate student " + student.getName() + " in lesson " + this.lesson + " for the assessment " + evaluation);
     }}
