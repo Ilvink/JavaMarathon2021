@@ -24,14 +24,9 @@ public class Task3 {
 
         System.out.println(musicBands);
 
-        List<MusicBand> musicBandsAfter2000 = new ArrayList<>();
-        for (MusicBand band: musicBands) {
-            if (band.getYear()>2000){
-                musicBandsAfter2000.add(band);
+        MusicBand.musicBandsAfter2000(musicBands);
+
             }
-        }
-        System.out.println(musicBandsAfter2000);
-    }
 
 }
 
